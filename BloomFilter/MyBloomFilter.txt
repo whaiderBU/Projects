@@ -1,0 +1,19 @@
+Waqar Haider
+U10664814
+Collaborator: Matt Hormis 
+
+• Designing good hash functions for the Bloom filter.
+    It is ideal for a hash function to be independent, extremely fast, and uniformaly disrtributed
+    when designing for a bloom filter.
+
+• Determining the ideal number of hashes to use.
+    After doing further reaserch into bloomfilters and hashfunctions, we found a 
+    function to choose the optimal value of k: (m/n)ln(2);where k is he number of
+     hash functions, m is the number of bits, and n is the range. Using this we can solve 
+     for k.
+
+• Managing the translation from bit-based Bloom filters to a char-based Bloom
+filter.
+    Using substr and c_str each help account for this. SUBSTR Returns a newly constructed string
+     object with its value initialized to a copy of a substring of this object. C_STR returns a 
+     pointer to an array that contains a null-terminated sequence of characters.
